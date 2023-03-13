@@ -6,7 +6,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
     // publicPath: "static/",
-    // assetModuleFilename: "images/[hash][ext][query]",
+    assetModuleFilename: "images/[name][ext]",
   },
   module: {
     rules: [
@@ -15,12 +15,12 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpe?g)$/,
+        test: /\.(png|jpeg|jpg)$/i,
         type: "asset/resource",
-        generator: {
-          publicPath: " ",
-          outputPath: "imgs",
-        },
+        // generator: {
+        //   publicPath: " ",
+        //   outputPath: "imgs",
+        // },
       },
     ],
   },
