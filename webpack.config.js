@@ -5,7 +5,7 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    // publicPath: "static/",
+    publicPath: " ",
     assetModuleFilename: "images/[name][ext]",
   },
   module: {
@@ -17,10 +17,6 @@ module.exports = {
       {
         test: /\.(png|jpeg|jpg)$/i,
         type: "asset/resource",
-        // generator: {
-        //   publicPath: " ",
-        //   outputPath: "imgs",
-        // },
       },
     ],
   },
