@@ -1,13 +1,18 @@
+@font-face {
+    font-family: "Totoro";
+    src: url("../assets/totoroFont.woff");
+}
+
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-image: url(../assets/totoro-background.png);
-    height: 100%;
-    width: 100%;
+  background-image: url(../assets/totoro-background.png);
+  height: 100%;
+  width: 100%;
 }
 
 /* --------- HEADER --------- */
@@ -15,16 +20,29 @@ body {
 #headerContent {
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 20%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#headerNavLinks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.headerNavBtn {
+    color: white;
+    font-family: "Totoro";
+    font-size: 2rem;
 }
 
 /* --------- BODY --------- */
 
 #bodyContent {
-    display: flex;
-    width: 100%;
-    height: 70%;
+  display: flex;
+  width: 100%;
 }
 
 /* --------- FOOTER --------- */
@@ -33,9 +51,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
   gap: 10px;
   width: 100%;
-  height: 10%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
 }
 
 #icon {
