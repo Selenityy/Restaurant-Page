@@ -5,31 +5,35 @@ export default function homeNavBar() {
   header.setAttribute("id", "headerContent");
   content.appendChild(header);
 
-  const homeNavBtn = document.createElement("button");
+  const headerNavLinks = document.createElement("div");
+  headerNavLinks.setAttribute("id", "headerNavLinks");
+  header.appendChild(headerNavLinks);
+
+  const homeNavBtn = document.createElement("a");
   homeNavBtn.classList.add("headerNavBtn");
   homeNavBtn.setAttribute("id", "homeNavBtn");
-  homeNavBtn.value = "home";
+  // homeNavBtn.value = "home";
   homeNavBtn.textContent = "Home";
-  header.appendChild(homeNavBtn);
+  headerNavLinks.appendChild(homeNavBtn);
 
-  const menuNavBtn = document.createElement("button");
+  const menuNavBtn = document.createElement("a");
   menuNavBtn.classList.add("headerNavBtn");
   menuNavBtn.setAttribute("id", "menuNavBtn");
-  menuNavBtn.value = "menu";
+  // menuNavBtn.value = "menu";
   menuNavBtn.textContent = "Menu";
-  header.appendChild(menuNavBtn);
+  headerNavLinks.appendChild(menuNavBtn);
 
-  const aboutNavBtn = document.createElement("button");
+  const aboutNavBtn = document.createElement("a");
   aboutNavBtn.classList.add("headerNavBtn");
   aboutNavBtn.setAttribute("id", "aboutNavBtn");
-  aboutNavBtn.value = "about";
+  // aboutNavBtn.value = "about";
   aboutNavBtn.textContent = "About";
-  header.appendChild(aboutNavBtn);
+  headerNavLinks.appendChild(aboutNavBtn);
 
-  const contactNavBtn = document.createElement("button");
+  const contactNavBtn = document.createElement("a");
   contactNavBtn.classList.add("headerNavBtn");
   contactNavBtn.setAttribute("id", "contactNavBtn");
-  contactNavBtn.value = "contact";
+  // contactNavBtn.value = "contact";
   contactNavBtn.textContent = "Contact";
-  header.appendChild(contactNavBtn);
+  headerNavLinks.appendChild(contactNavBtn);
 }
