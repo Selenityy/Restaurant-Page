@@ -1,11 +1,11 @@
 import githubIcon from "../../assets/githubLogo.png";
 
 export default function homeFooter() {
-  const content = document.getElementById("content");
+  const allChildren = document.getElementById("allChildren");
 
   const footer = document.createElement("div");
   footer.setAttribute("id", "footerContent");
-  content.appendChild(footer);
+  allChildren.appendChild(footer);
 
   const developedBy = document.createElement("div");
   developedBy.classList.add("footerClass");

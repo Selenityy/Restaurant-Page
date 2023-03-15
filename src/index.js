@@ -7,8 +7,14 @@ import "./styles/menu.css";
 homePage();
 
 const menuButton = document.getElementById("menuNavBtn");
+const bodyMenuButton = document.getElementById("menuBtn");
 
 menuButton.addEventListener("click", function () {
   removeChildrenNodes();
   menuPage();
 });
+
+bodyMenuButton.addEventListener("click", function () {
+    removeChildrenNodes();
+    menuPage();
+  });

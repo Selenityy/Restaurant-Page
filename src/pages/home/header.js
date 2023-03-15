@@ -1,9 +1,9 @@
 export default function homeNavBar() {
-  const content = document.getElementById("content");
+  const allChildren = document.getElementById("allChildren");
 
   const header = document.createElement("div");
   header.setAttribute("id", "headerContent");
-  content.appendChild(header);
+  allChildren.appendChild(header);
 
   const headerNavLinks = document.createElement("div");
   headerNavLinks.setAttribute("id", "headerNavLinks");

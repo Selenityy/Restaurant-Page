@@ -1,11 +1,11 @@
 import totoroLogoImg from "../../assets/totoro-logo.png"
 
 export default function homeBody() {
-  const content = document.getElementById("content");
+  const allChildren = document.getElementById("allChildren");
 
   const body = document.createElement("div");
   body.setAttribute("id", "bodyContent");
-  content.appendChild(body);
+  allChildren.appendChild(body);
 
   const cafeBranding = document.createElement("div");
   cafeBranding.setAttribute("id", "cafeBranding");
