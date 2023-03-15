@@ -3,6 +3,7 @@ import githubIcon from "../../assets/githubLogo.png";
 export default function homeFooter() {
   const allChildren = document.getElementById("allChildren");
 
+  // 1st parent div: footer
   const footer = document.createElement("div");
   footer.setAttribute("id", "footerContent");
   allChildren.appendChild(footer);
