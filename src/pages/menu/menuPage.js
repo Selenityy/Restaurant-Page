@@ -55,6 +55,7 @@ export default function menuPage() {
     "Americano",
     "Brewed Coffee",
   ];
+  coffeeList.sort();
   coffeeList.forEach(renderCoffeeList);
   function renderCoffeeList(element) {
     let coffeeLi = document.createElement("li");
@@ -82,6 +83,7 @@ export default function menuPage() {
     "Cookies",
     "Scones",
   ];
+  bakeryList.sort();
   bakeryList.forEach(renderBakeryList);
   function renderBakeryList(element) {
     let bakeryLi = document.createElement("li");
@@ -102,6 +104,7 @@ export default function menuPage() {
   lunchUl.setAttribute("id", "lunchList");
   lunchMenu.appendChild(lunchUl);
   const lunchList = ["CatBus Bento", "Spirit Salad", "Totoro Buns", "Panini"];
+  lunchList.sort();
   lunchList.forEach(renderLunchList);
   function renderLunchList(element) {
     let lunchLi = document.createElement("li");
