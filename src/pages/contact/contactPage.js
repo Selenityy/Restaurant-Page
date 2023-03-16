@@ -1,7 +1,3 @@
-import { eventListeners } from "../../functions/pageFuncs";
-import homeFooter from "../home/footer";
-import homeNavBar from "../home/header";
-
 export default function contactPage() {
   const bodyContent = document.getElementById("bodyContent");
 

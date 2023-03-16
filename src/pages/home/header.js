@@ -1,4 +1,4 @@
-export default function homeNavBar() {
+export default function header() {
   const allChildren = document.getElementById("allChildren");
 
   // 1st parent div: header
@@ -23,12 +23,6 @@ export default function homeNavBar() {
   menuNavBtn.setAttribute("id", "menuNavBtn");
   menuNavBtn.textContent = "Menu";
   headerNavLinks.appendChild(menuNavBtn);
-
-  // const aboutNavBtn = document.createElement("a");
-  // aboutNavBtn.classList.add("headerNavBtn");
-  // aboutNavBtn.setAttribute("id", "aboutNavBtn");
-  // aboutNavBtn.textContent = "About";
-  // headerNavLinks.appendChild(aboutNavBtn);
 
   const contactNavBtn = document.createElement("a");
   contactNavBtn.classList.add("headerNavBtn");
