@@ -4,14 +4,21 @@ import contactPage from "./pages/contact/contactPage";
 import { removeChildrenNodes } from "./functions/pageFuncs";
 import "./styles/home.css";
 import "./styles/menu.css";
+import homeNavBar from "./pages/home/header";
+import homeFooter from "./pages/home/footer";
 
 // sets up the divs for the pages
 const content = document.getElementById("content");
 const allChildren = document.createElement("div");
 allChildren.setAttribute("id", "allChildren");
 content.appendChild(allChildren);
+const bodyContent = document.createElement("div");
+bodyContent.setAttribute("id", "bodyContent");
+allChildren.appendChild(bodyContent);
 
 // runs the home page
+homeNavBar();
+homeFooter();
 homePage();
 
 const menuButton = document.getElementById("menuNavBtn");

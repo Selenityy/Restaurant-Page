@@ -1,16 +1,12 @@
-import homeFooter from "../home/footer";
-import homeNavBar from "../home/header";
 import totoroFoodPic from "../../assets/totoro-food-pic.png";
 
 export default function menuPage() {
-  homeNavBar();
-
-  const allChildren = document.getElementById("allChildren");
+  const bodyContent = document.getElementById("bodyContent");
 
   // 1st parent node: menu body
   const menuContent = document.createElement("div");
   menuContent.setAttribute("id", "menuContent");
-  allChildren.appendChild(menuContent);
+  bodyContent.appendChild(menuContent);
 
   // 1st child node: top half of menu page
   const brandingPortion = document.createElement("div");
@@ -111,6 +107,4 @@ export default function menuPage() {
     lunchUl.appendChild(lunchLi);
     lunchLi.innerHTML = lunchLi.innerHTML + element;
   }
-
-  homeFooter();
 }
