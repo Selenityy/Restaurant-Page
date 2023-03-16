@@ -4,7 +4,6 @@ import totoroFoodPic from "../../assets/totoro-food-pic.png";
 
 export default function menuPage() {
   homeNavBar();
-  homeFooter();
 
   const allChildren = document.getElementById("allChildren");
 
@@ -112,4 +111,6 @@ export default function menuPage() {
     lunchUl.appendChild(lunchLi);
     lunchLi.innerHTML = lunchLi.innerHTML + element;
   }
+
+  homeFooter();
 }
