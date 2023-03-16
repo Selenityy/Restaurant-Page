@@ -24,11 +24,11 @@ export default function homeNavBar() {
   menuNavBtn.textContent = "Menu";
   headerNavLinks.appendChild(menuNavBtn);
 
-  const aboutNavBtn = document.createElement("a");
-  aboutNavBtn.classList.add("headerNavBtn");
-  aboutNavBtn.setAttribute("id", "aboutNavBtn");
-  aboutNavBtn.textContent = "About";
-  headerNavLinks.appendChild(aboutNavBtn);
+  // const aboutNavBtn = document.createElement("a");
+  // aboutNavBtn.classList.add("headerNavBtn");
+  // aboutNavBtn.setAttribute("id", "aboutNavBtn");
+  // aboutNavBtn.textContent = "About";
+  // headerNavLinks.appendChild(aboutNavBtn);
 
   const contactNavBtn = document.createElement("a");
   contactNavBtn.classList.add("headerNavBtn");
