@@ -1,25 +1,27 @@
-import homePage from "./pages/home/homePage";
 import menuPage from "./pages/menu/menuPage";
 import contactPage from "./pages/contact/contactPage";
 import { removeChildrenNodes } from "./functions/pageFuncs";
 import "./styles/home.css";
 import "./styles/menu.css";
-import homeNavBar from "./pages/home/header";
-import homeFooter from "./pages/home/footer";
+import header from "./pages/home/header";
+import footer from "./pages/home/footer";
+import homeBody from "./pages/home/homePage";
 
 // sets up the divs for the pages
 const content = document.getElementById("content");
 const allChildren = document.createElement("div");
 allChildren.setAttribute("id", "allChildren");
 content.appendChild(allChildren);
+
+header();
+
 const bodyContent = document.createElement("div");
 bodyContent.setAttribute("id", "bodyContent");
 allChildren.appendChild(bodyContent);
 
-// runs the home page
-homeNavBar();
-homeFooter();
-homePage();
+homeBody();
+
+footer();
 
 const menuButton = document.getElementById("menuNavBtn");
 const bodyMenuButton = document.getElementById("menuBtn");
@@ -34,7 +36,7 @@ menuButton.addEventListener("click", function () {
 
 homeButton.addEventListener("click", function () {
   removeChildrenNodes();
-  homePage();
+  homeBody();
 });
 
 contactButton.addEventListener("click", function () {
