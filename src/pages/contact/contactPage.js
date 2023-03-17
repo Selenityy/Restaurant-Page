@@ -1,10 +1,14 @@
 export default function contactPage() {
   const bodyContent = document.getElementById("bodyContent");
 
+  const contactBodyContent = document.createElement("div");
+  contactBodyContent.setAttribute("id", "contactBodyContent");
+  bodyContent.appendChild(contactBodyContent);
+
   // 1st parent node: contact description
   const contactDescription = document.createElement("div");
   contactDescription.setAttribute("id", "contactContent");
-  bodyContent.appendChild(contactDescription);
+  contactBodyContent.appendChild(contactDescription);
 
   // 1st child of the contact description
   const contactImage = document.createElement("div");
@@ -25,7 +29,7 @@ export default function contactPage() {
   const formBox = document.createElement("div");
   formBox.setAttribute("id", "formBox");
   formBox.classList.add("form");
-  bodyContent.appendChild(formBox);
+  contactBodyContent.appendChild(formBox);
 
   const fieldset = document.createElement("fieldset");
   fieldset.setAttribute("id", "fieldset");

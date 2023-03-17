@@ -3,15 +3,14 @@ import totoroFoodPic from "../../assets/totoro-food-pic.png";
 export default function menuPage() {
   const bodyContent = document.getElementById("bodyContent");
 
-  // 1st parent node: menu body
-  const menuContent = document.createElement("div");
-  menuContent.setAttribute("id", "menuContent");
-  bodyContent.appendChild(menuContent);
+  const menuBodyContent = document.createElement("div");
+  menuBodyContent.setAttribute("id", "menuBodyContent");
+  bodyContent.appendChild(menuBodyContent);
 
   // 1st child node: top half of menu page
   const brandingPortion = document.createElement("div");
   brandingPortion.setAttribute("id", "brandingPortion");
-  menuContent.appendChild(brandingPortion);
+  menuBodyContent.appendChild(brandingPortion);
 
   // child node to top half of menu page: food pic
   const foodPic = document.createElement("img");
@@ -28,7 +27,7 @@ export default function menuPage() {
   // 2nd child node: bottom half of menu page
   const menuPortion = document.createElement("div");
   menuPortion.setAttribute("id", "menuPortion");
-  menuContent.appendChild(menuPortion);
+  menuBodyContent.appendChild(menuPortion);
 
   //child node to bottom half of menu page: coffee
   const coffeeMenu = document.createElement("div");

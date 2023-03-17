@@ -3,11 +3,15 @@ import totoroLogoImg from "../../assets/totoro-logo.png";
 export default function homeBody() {
   const bodyContent = document.getElementById("bodyContent");
 
+  const homeBodyContent = document.createElement("div");
+  homeBodyContent.setAttribute("id", "homeBodyContent");
+  bodyContent.appendChild(homeBodyContent);
+
   // 1st child div for parent body: title and logo
   const cafeBranding = document.createElement("div");
   cafeBranding.setAttribute("id", "cafeBranding");
   cafeBranding.classList.add("bodyClass");
-  bodyContent.appendChild(cafeBranding);
+  homeBodyContent.appendChild(cafeBranding);
 
   // title, child div to title and logo body
   const totoroTitle = document.createElement("div");
@@ -25,7 +29,7 @@ export default function homeBody() {
   const cafeDescription = document.createElement("div");
   cafeDescription.setAttribute("id", "cafeDescription");
   cafeDescription.classList.add("bodyClass");
-  bodyContent.appendChild(cafeDescription);
+  homeBodyContent.appendChild(cafeDescription);
 
   // description itself, child div to body description
   const lorem = document.createElement("div");
@@ -38,7 +42,7 @@ export default function homeBody() {
   const homePageMenuBtn = document.createElement("div");
   homePageMenuBtn.setAttribute("id", "homePageMenuBtn");
   homePageMenuBtn.classList.add("bodyClass");
-  bodyContent.appendChild(homePageMenuBtn);
+  homeBodyContent.appendChild(homePageMenuBtn);
 
   // button itself, child div to menu button
   const menuBtn = document.createElement("button");
