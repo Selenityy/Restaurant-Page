@@ -14,18 +14,11 @@ html {
 }
 
 body {
-  /* background-image: url(../assets/totoro-background.png); */
   height: 100%;
   width: 100%;
 }
 
-/* img {
-  max-width: 100%;
-  display: block;
-} */
-
 #content {
-  /* background-image: url(../assets/totoro-background.png); */
   height: 100%;
   width: 100%;
 }
@@ -50,8 +43,9 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  /* height: 50px; */
-  background-color: rgba(120, 75, 132, 0.9);
+  padding-top: 15px;
+  background-color: rgba(120, 75, 132);
+  z-index: 7;
 }
 
 #headerNavLinks {

@@ -24,8 +24,7 @@ img {
   display: block;
 }
 
-#menuContent {
-  grid-area: body;
+#menuBodyContent {
   display: flex;
   flex-direction: column;
 }
@@ -47,13 +46,15 @@ img {
 
 #menu {
   position: absolute;
+  display: flex;
+  justify-content: center;
   inset: 0;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   z-index: 2;
+  font-family: "Totoro";
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(0, 0, 1));
 }
 
 /* ------- MENU HALF OF SCREEN ------- */
