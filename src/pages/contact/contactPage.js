@@ -1,9 +1,13 @@
 export default function contactPage() {
   const bodyContent = document.getElementById("bodyContent");
 
+  const contactParentNode = document.createElement("div");
+  contactParentNode.setAttribute("id", "contactParentNode");
+  bodyContent.appendChild(contactParentNode);
+
   const contactBodyContent = document.createElement("div");
   contactBodyContent.setAttribute("id", "contactBodyContent");
-  bodyContent.appendChild(contactBodyContent);
+  contactParentNode.appendChild(contactBodyContent);
 
   // 1st parent node: contact description
   const contactDescription = document.createElement("div");
@@ -12,14 +16,14 @@ export default function contactPage() {
 
   // 1st child of the contact description
   const contactImage = document.createElement("div");
-  contactImage.setAttribute("id", "contractText");
+  contactImage.setAttribute("id", "contactImage");
   contactImage.classList.add("contactTopHalf");
   contactImage.innerHTML = "Contact";
   contactDescription.appendChild(contactImage);
 
   // 2nd child of the contact description
   const contactText = document.createElement("div");
-  contactText.setAttribute("id", "contractText");
+  contactText.setAttribute("id", "contactText");
   contactText.classList.add("contactTopHalf");
   contactText.innerHTML =
     "Lorem ipsum dolor sit amet. Qui repellat dolorum est nobis voluptas vel dolores molestias in voluptatem nisi qui internos mollitia ut quos quia sed enim voluptates! In unde maiores in voluptatem architecto et debitis possimus et debitis magni hic quasi fugit.";
@@ -43,6 +47,7 @@ export default function contactPage() {
   fieldset.appendChild(contactForm);
 
   const ul = document.createElement("ul");
+  ul.setAttribute("id", "contactUl");
   contactForm.appendChild(ul);
 
   // Full Name
@@ -91,7 +96,7 @@ export default function contactPage() {
   messageLabel.innerHTML = "Message:";
   messageLi.appendChild(messageLabel);
 
-  const messageInput = document.createElement("input");
+  const messageInput = document.createElement("textarea");
   messageInput.setAttribute("type", "text");
   messageInput.setAttribute("id", "message");
   messageInput.setAttribute("name", "message");
