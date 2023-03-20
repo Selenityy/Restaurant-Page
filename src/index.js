@@ -3,6 +3,7 @@ import contactPage from "./pages/contact/contactPage";
 import { removeChildrenNodes } from "./functions/pageFuncs";
 import "./styles/home.css";
 import "./styles/menu.css";
+import "./styles/contact.css";
 import header from "./pages/home/header";
 import footer from "./pages/home/footer";
 import homeBody from "./pages/home/homePage";
