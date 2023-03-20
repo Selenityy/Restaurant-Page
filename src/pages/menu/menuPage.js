@@ -39,7 +39,7 @@ export default function menuPage() {
   // coffee list with func to add products to the ul
   const coffeeUl = document.createElement("ul");
   coffeeUl.setAttribute("id", "cofList");
-  coffeeMenu.appendChild(coffeeUl);
+  menuPortion.appendChild(coffeeUl);
   const coffeeList = [
     "Cappuccinos",
     "Espresso",
@@ -68,7 +68,7 @@ export default function menuPage() {
   // bakery list with func to add products to the ul
   const bakeryUl = document.createElement("ul");
   bakeryUl.setAttribute("id", "bakeList");
-  bakeryMenu.appendChild(bakeryUl);
+  menuPortion.appendChild(bakeryUl);
   const bakeryList = [
     "Totoro Coffee Cake",
     "Bagel",
@@ -96,8 +96,8 @@ export default function menuPage() {
   // lunch list with func to add products to the ul
   const lunchUl = document.createElement("ul");
   lunchUl.setAttribute("id", "lunchList");
-  lunchMenu.appendChild(lunchUl);
-  const lunchList = ["CatBus Bento", "Spirit Salad", "Totoro Buns", "Panini"];
+  menuPortion.appendChild(lunchUl);
+  const lunchList = ["Catbus Bento", "Spirit Salad", "Totoro Buns", "Panini"];
   lunchList.sort();
   lunchList.forEach(renderLunchList);
   function renderLunchList(element) {
