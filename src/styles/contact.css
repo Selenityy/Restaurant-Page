@@ -1,0 +1,47 @@
+#contactParentNode {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactBodyContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* --------- CONTACT INFO --------- */
+
+#contactContent {
+  display: flex;
+  flex-direction: column;
+}
+
+#contactImage {
+  font-family: "Totoro";
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  padding-bottom: 20px;
+}
+
+#contactText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 20px;
+}
+
+/* --------- FORM BOX --------- */
+
+#formBox {
+    
+}
+
+#fieldset {
+
+}
+
+label {
+  color: black;
+}
