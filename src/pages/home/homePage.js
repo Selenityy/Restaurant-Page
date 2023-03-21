@@ -1,4 +1,6 @@
 import totoroLogoImg from "../../assets/totoro-logo.png";
+import { removeChildrenNodes } from "../../functions/pageFuncs";
+import menuPage from "../menu/menuPage";
 
 export default function homeBody() {
   const bodyContent = document.getElementById("bodyContent");
@@ -49,4 +51,9 @@ export default function homeBody() {
   menuBtn.setAttribute("id", "menuBtn");
   menuBtn.textContent = "Menu";
   homePageMenuBtn.appendChild(menuBtn);
+
+  menuBtn.addEventListener("click", function () {
+    removeChildrenNodes();
+    menuPage();
+  });
 }
