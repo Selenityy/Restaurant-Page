@@ -3,17 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url(../assets/totoro-scream.png); */
-  /* object-fit: cover; */
-  /* z-index: 1; */
+  background-image: url(../assets/no-face.png);
+  background-position-x: -100px;
+  background-position-y: -180px;
+  background-size: 30%;
 }
-
-/* #contactSiblingNode {
-  background-image: url(../assets/totoro-scream.png);
-  filter: blur(8px);
-  z-index: 2;
-  height: 100%;
-} */
 
 #contactBodyContent {
   display: flex;
@@ -36,7 +30,6 @@
   display: flex;
   justify-content: center;
   font-size: 4rem;
-  /* padding-bottom: 20px; */
 }
 
 #contactText {
@@ -55,9 +48,6 @@
   display: flex;
   justify-content: center;
 }
-
-/* #fieldset {
-} */
 
 #myForm {
   display: flex;
@@ -106,5 +96,21 @@ label {
   width: 6rem;
   height: 3rem;
   font-size: 1.3rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#submitBtn:hover {
+  background-color: #784b84;
+  color: white;
+}
+
+#submitBtn:active {
+  background-color: #784b84;
+  color: white;
+  box-shadow: 0 5px #334155;
+  transform: translateY(5px);
+  transition-duration: 0.4s;
 }
