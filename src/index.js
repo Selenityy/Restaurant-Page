@@ -25,7 +25,6 @@ homeBody();
 footer();
 
 const menuButton = document.getElementById("menuNavBtn");
-const bodyMenuButton = document.getElementById("menuBtn");
 const homeButton = document.getElementById("homeNavBtn");
 const contactButton = document.getElementById("contactNavBtn");
 
@@ -43,10 +42,4 @@ homeButton.addEventListener("click", function () {
 contactButton.addEventListener("click", function () {
   removeChildrenNodes();
   contactPage();
-});
-
-// body text button listens for click
-bodyMenuButton.addEventListener("click", function () {
-  removeChildrenNodes();
-  menuPage();
 });
