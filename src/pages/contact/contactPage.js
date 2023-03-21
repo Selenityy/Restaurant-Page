@@ -5,6 +5,10 @@ export default function contactPage() {
   contactParentNode.setAttribute("id", "contactParentNode");
   bodyContent.appendChild(contactParentNode);
 
+  const contactSiblingNode = document.createElement("div");
+  contactSiblingNode.setAttribute("id", "contactSiblingNode");
+  bodyContent.appendChild(contactSiblingNode);
+
   const contactBodyContent = document.createElement("div");
   contactBodyContent.setAttribute("id", "contactBodyContent");
   contactParentNode.appendChild(contactBodyContent);
