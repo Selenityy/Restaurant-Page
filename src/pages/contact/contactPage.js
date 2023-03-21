@@ -1,3 +1,5 @@
+// import noFace from "../../assets/no-face.png";
+
 export default function contactPage() {
   const bodyContent = document.getElementById("bodyContent");
 
@@ -6,6 +8,7 @@ export default function contactPage() {
   bodyContent.appendChild(contactParentNode);
 
   const contactSiblingNode = document.createElement("div");
+  //   contactSiblingNode.src = noFace;
   contactSiblingNode.setAttribute("id", "contactSiblingNode");
   bodyContent.appendChild(contactSiblingNode);
 
